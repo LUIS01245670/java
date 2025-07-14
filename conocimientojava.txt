@@ -1,0 +1,244 @@
+java desde cero
+#instalación java eclipse
+instalaremos java 21 lts
+podemos descargar la de Oracle o la  de open jdk la diferencia es que la de oracol recibira soporte hasta que salga la nueva versión java mi entras la de open jdk no 
+comprobaremos que versión tenemos instalada
+si que remos una versión diferente de java y temos java 
+debemos desistalar la versión anterior
+
+luego descargamos eclipse 
+lo descargaremos desde eclipse fundation
+descargaremos la Enterprise para poder trabajar tanto en el frond como en el backend
+nos descargara un zip que contiene una carpeta donde 
+esta nuestro programa eclipse creamos un acceso directo
+al escritorio lo abrimos no pide que establezcamos nuestro workspace lo hacemo*
+
+en eclipse tenemos dos perspectivas 
+que es eso? es el modo de visualizar y el modo de trabajar
+podemos trabajar del lado del cliente y del lado del servidor para abrir una perspectiva del lado del cliente
+y poder trabajar con eclipse programando del lado del cliente y abrir una perspectiva para del lado del servidor trabajaremos con la prespectiva java ee
+creamos un  proyecto donde en file-new-proyect..
+creando mi primera clase
+public stactic void main
+método el punto de inicio donde comiensa a ejecutar un programa java siempre es por el método main
+para mostrar la consola en eclipse es vamos a wiendows -sview console
+___________________________________________
+#estructura 
+anatomía de un programa de java sencillo
+estructuras principales
+
+que tipo de aplicaciones podemos crear con java 
+podemos crear aplicaciones de consola y de propósito general
+
+todo  programa java debe estar formado almenos por una clase los normal esque un programa java este compuesto por varias clases y varios ficheros 
+
+para una mejor organización y legiblidad del código
+creo varios archivos .java y en cada uno de ellos las clases que considero oportunas normalmente dentro de un archivo  .java están unas clases que tiene una relación entre se cuando creo una aplicación compleja de java tendre que dividir las clases por tareas estas clases se dedican a acceseder a la base de datos,ottras se dedican a mostrar la interfaces de usuario y otras se dedican a comunicar la interfaces de usuario con los datos esto se denomina patron de diseño y este es el patron modelo vista controlador eso no es no mas ni menos que gerarquisar 
+o dividir todas las clases que tenemos en una aplicación java en grupos o paquetes dentro de los cuales las clases tienen una relación entre si 
+
+en java hay algo que se denomina palabra reservada que es 
+esto?
+es una palabra del código que forma parte del propio lenguaje por ejemplo public es una palabra reservada class es una palabra reservada systems es reservada aut es reservada
+palabra reservada public es un modificador de acceso nos va permitir acceder desde fuera de esta clase incluso desde este archivo al contenido de la clase si el public no podríamos acceder desde fuera al código que tiene esa clase lo adecuado al crear una clase esque su nombre este en camelcase que comience en mayuscula y si comiensa otrasilava que comience en mayuscula también
+
+tipos primitivos 
+declaraciones de variables
+referencia de tipos
+
+tipos de datos primitivos
+categorías
+enteros
+los números enteros se dividen en subtipos
+tenomos los datos de tipo
+int 4 bytes  de espacio para alacenamiento (en memoria ram)desde -2,147,483 hasta 2,147,483,647
+short  2 bytes de espacio para almacenamiento  desde  -32,768 hasta 32,797
+log 8 bytes de espacio para almacenamiento sufijo l
+la características  que tienen los logs en general es que a la hora de escribirlos le agregamos siempre hay que agregarle el sufijo l si escribo un numero en java muy grande para espesificar que sea un long java me obliga a poner el sufijo l a continuación del valor numerico 
+byte 1 byte de espacio para almacenamiento desde -128 hasta 127
+el 35 puede ser un int,short,long,byte
+datos flotantes (decimales)
+subtipos
+float 4 bytes de espacio para almacenamiento Aproximadamente 6 a 7 cifras decimales significativas sufijo F
+para manejar decimales con mayor pesicion
+doublé 8 bytes de espacio para almacenamiento aproximadamente 15 cifras decimales signifcativas
+
+char para representar caracteres los char van entre comillas simples
+
+boolean  toman dos valores true y false
+
+#variable 
+es un espacio en la memoria del ordenador donde se almacenara un valor que podrá cambiar durante la ejecución del programa cuando creo una variable estoy reservando 
+un espacio en la memoria ram del ordenador
+inicializar una variable es almacenar un valor java no permite utilizar variables que no se hayan iniciado
+a la hora de crear variables en java hay que tratar de obtimizar los recursos
+
+#inferencia de tipos que es
+es una característica de algunos lenguajes de programación que permite al copilae deducir automáticamente el tipo de una variable en función del valor que se le asigne sin que el programador tenga que especificarlo explícitamente
+
+el compilador analiza el valor asignado y deduce el tipo mas adecuado
+
+ejemplo de esto digamos que tenemos una aplicación compleja en la cual debemos crear 2500 variables tener que declarar 2500 varibles puede ser un poco tedioso tener que especificar siempre el tipo para evitar eso utilizamos la inferencia de tipos presindimos del tipo y dejamos que sea el copilador  quien decida cual es el tipo que se le asignara en función del valor que he almacenado en el interior esto en practica utilizo la palabra reservada var para todo var edad=17 es el que copilador que decide si esto va ser int doublé sort byte  string que va ser esto lo decide en función en el valor almacenado en su interior
+esto solo evita que el programador tenga que especificar el tipo después de que el copilador especifica el tipo asi quedara durante todo el programa la variable con el tipo de dato que especifico el copilador los mas comunes que asigna el copilador so doublé int string char
+
+donde podemos utilizar var en java
+variables locales dentro de métodos ,en bucle for-each y for en try-with-sources
+donde no podemos utilizarlas 
+parámetros de métodos 
+variables de clases o atributos de clase
+tipos genéricos
+por que se incluyo 
+para reducir la verbosidad
+verboso que quiere decir que para expresar algo
+debo escribir mucho código
+hacer el código mas legible
+evitar repeticiones con tipos evidente
+me servirá mas que todo para datos que sutipo es muy largo 
+por ejemplo un array lis  que seria arraylis<int> dato=new arraylist<int> a la hora de definir el tipo de dato lo podríamos remplazar por var datos=new arraylist<int>
+
+para mejor integración con características como lambdas y streams
+
+y para facilitar los cambios de tipo cuando trabajamos con 
+objetos y con herencia nosotros podemos tener un objeto de una sub clase y convertirlo en un objeto de la clase padre
+---cuando creo un paquete  en eclipse realmente estoy creando una subcarpeta la carpeta src de mi proyecto raíz
+
+---si utilizo inferencia de tipos estoy abligado a declarar y nicializar en la misma linea---
+ya que la variable se inicializa al momento de que se copila el programa y si la delaramos depues java no sabra que tipo de variable es
+el código del main se ejecuta de arriba a abajo
+
+__________________________________________________________
+##operadores
+para operar con una variable en java esta debe ser inicializada
+operadores 
+aritmeticos
++:suma
+-: resta
+*:multiplicación
+/:división
+% modulo: nos da el resto de una división
+lógicos ,relacionales y booleanos
+>mayor que
+<menor que
+>= mayor o igual que  que 
+<=menor o igual que 
+!=distinto que
+== igual 
+&& y lógico
+|| o lógico
+---los string son objetos no podemos utilizar operadores lógicos con string ya que este compara valores mas no objetos"
+----------------------------------------------------
+clase mat
+---en java las asignaciones se evalúan de derecha a izquierda---
+---en java cuando realizamos una operación aritmética entre tipos mas pequeños que int byte o short java convierte los operandos las variables que hacen la operación antes de ralizar la operación en variables tipo int se realiza un conversión implisita es una conversión que realiza el lenguaje sin que yo la vea (temos la conversión explicita que es que yo convierta una variable de un  tipo a otro) --esto pasa por un motivo cuestión de eficiencia (eficiencia en el procesador) resulta que los procesadores modernos están optimizados para trabajar con instrucciones con palabras de un tamaño extandar que generalmente es de 32 bites o 64 bites la maquina virtual de java utiliza como mínimo 32 bites como el tamaño mínimo de operaciones aritméticas enteras  en la myoria de las operaciones que realizamos con enteros de 8 bits o incluso con los short que ocupan 16 bits no son mas rápidas que se realizan con 32 bits que es lo que ocupa un entero  como hago para hacer del resultado un dato de tipo byte en este caso pues hago un casting  convertir de un tipo a otro-- ---
+
+#promocion de tipo java
+--si una operación imnvolucra un tipo menor a int (byte,short,char) se promueve a int antes de realizar la operación 
+--si una operación invuolucra a un int y un long ,el resultado es long
+--si involucra un float el resultado es float
+--si involucra un doublé el resultado es doublé
+
+#la clase math se utiliza para realizar cálculos raizes cuadradas potencias ,cálculos trigonométricos
+---en java tenemos dos tipos de clase tenemos las clases propias y las predefinidas las propias son las que podemos 
+crear nosotros como programadores construimos desde cero y luego tenemos las predefinidas son clases que ya vienen construidas con el propio lenguaje de programación
+y estas clases tienen una serie de funciones métodos que tiene un serie de herramientas que me permiten realizar ciertas operaciones
+
+---como ordena java estas clases predefininas ya que son sentenares 
+las  clases predifidas en java se organizan en algo que se denomina api interfaces de programación de aplicaciones
+la api de java es una gran biblio teca donde están organizadas estas clases con so descripción para que sirven y sus herramientas que herramientas tienen cada clase
+para que nosotros como programadores lo consultemos y lo podamos utilizar la api  de java se organiza en modulos-paquetes-clases-(metodos y atributos) un modulo tendrá en su interior varios paquetes que a su ves estos contendrá varias clases y asuvez estas clases contendrametodos y atributos antes de la versión nueve los modulos no existían se introdujeron para tener una mejor organización
+en cada modulo están los maquetes que  tienen que ver algo 
+entre si que se utilizan esos paquetes para tareas similares  y para los paquetes lo mismo tiene
+por ejemplo si vas a crear una interfaces graficas con sus menus ,botones,desplegables para poder trabajar con esa interfaces hay que tener que trabajar con dos paquetes el paquete java fx y el paquete java swing esos paquetes tendrán en su interio clases que están relacionadas entre si clases que sirven una para construir botones otras para construir menus desplegables a su ves 	esas clases están paquetes y a su ves ese paquete o paquetes estarán en un modulo que tendrá ese modulo en su interior pues todo los
+paquetes para poder crear aplicaciones graficas
+
+---  
+
+todos los métodos de la clase math son estáticos que implica esto que hay que poner el nombre de da clase delante es decir Math.sqrt() siempre que un método es static debo poner la clase primero invocando directamente el método el método sqrt es un método que nos devuelve la raíz cuadrada le pasamos un double y nos devuelve uno este método es public  static doublé ósea se puede acceder desde cualquier lugar y esta si invoca directamente desde la clase
+
+#casting
+casting convertir un tipo en otro
+y lo puedo hacer siempre y cuando los tipos sean compatibles si hago caststing de doublé a entero lo números decimales desaparecerán y sol quedara el primer numero
+
+resumiendo habran dos tipos de conversiones en java las implícitas de mas pequeño a mas grande (widening casating) explecita (casting) de mas grande a mas pequeño (Narroiwing casting)
+
+
+#metodos habituales de la clase math
+---con java doc podemos ver descripción de los métodos lo habilito desde eclipse--
+
+--clase Biginteger clases pensadas para manejar grandes datos---
+ 
+
+las clase de el paquete javalang no es necesario importarlas
+_______________________________________________________
+#clase string
+manipulación de cadenas con clase string
+su mayoría de métodos no son estáticos sus objetos se instancias solo especifcando una variable como    string 
+y dándole de valor una cadena de texto sus métodos mas usados de la clase string para manipulación de cadenas de texto son
+
+length() :devuelove la longitud de una cadena de caracteres
+charAt(int) : devuelve la posición de un carácter dentro de una de una cadena .(las posiciones empienzan a contar de 0)
+
+substring(x,y):devuelve una subcadena dentro de la cadena
+siendo x el carácter a partir del cual se extrae e y el numero de caracteres que se quieren extraer
+
+equal=sirve para comparar cadenas entre si
+equalignorecase: hace lo mismo pero ignorando si hay minúsculas o mayúsculas
+
+__#string
+cuando creamos un objeto de tipo string estamos almacenando un objeto en la memoria
+
+la memoria ram se divide en varias ramas entre las cuales están el stack o pila y el heep o montón  String minombre="luis"; cuando nosotros escribimos esta linea de código y el programa a ejecutado esa linea de código lo que ha ocurri aquí sin que nosotros lo veamos evidente mente es que se creo un objeto el heap cuyo contenido es hola el objeto cuyo contenido es hola se almacena en el heap en esa área de la memoria ram que es el heap  mientras que la  variable objeto que hemos utilizado saludo  se almacena en la pila o stack sin que nosotros lo veamos hexiste una especie de link enlace desde saludo has el contenido de saludo como hay un tipo de unión para recuperar el contenido de ese objeto mencionamos a la variable contenida en el stack 
+un string es imutable cuando se inicializa creo un objeto de tipo string su contenido se almacena en el heap 
+cuando cuando a ese objeto le cambio el valor no se le estoy cambiando lo que estoy haciendo es creando un nuevo objeto en heap y esa variable de tipo objeto desde el stack al heap apunta al otro objeto creado lo que hacemos es cambiar la referencia a la que apunta varible saludo 
+que paso ahí el objeto anterior no desaparece sino que ocupa un espacio en la memoria ram de mi dispositivo
+
+java tiene una caracteritica que se llama garbagge collector es una característica del lengua que elimina cuando el cree conveniente los objetos  en la memoria que están sin referenciar por que entiende que no se están utilizando
+
+por que son necesarios los paquetes? por que se inventaron?
+para organizar las clases
+para evitar conflictos d nombre
+en las clases predefinidas de java tenemos clases repetidas con el mismo nombre pero al estar en diferentes paquetes pueden coexistir
+para controlar la visibilidad de las clases
+cuando yo creo un paquete en java el cual tiene en su interior x clases yo puedo hacer que algunas de estas clases se vean y otras no desde fuera de ese paquete es decir que algunas clases sean accesibles desde afuera del paquete que estoy creando y otras clases no lo sean
+
+los paquetes en java permiten al anidamiento exactamente igual que las carpetas de un sistema operativo un paquetes puede terner subpaquete o subpaquetes convinado con clases
+toda las clases pertenecientes al paquete java.lang no requieren importancion para ser utilizadas en java
+paque sirven  los modulos 
+encapsulación mas fuerte
+ me van apermitir controlar la visibilidad de los paquetes
+reducion del tamaño de las aplicaciones
+porque el crear modulos reduce el tamaño de las aplicaciones
+los modulos es cuando creamos decenas o centenares de clases y miles y miles de líneas de código para aplicaciones empresariales
+los modulos no tienen anidamiento lo que tienen son dependencias un modulo depende de otro para su funcionamiento pero no quiere decir que este dentro de el
+
+dentro de las organizaciones java se ,jdk ,otros dentro de esto tenemos modulos
+dentro de la organización java se tenemos un modulo el modulo java,base es el modulo principal nonecesito especificar cada en mis aplicaciones si todo lo que nesecito esta dentro de este modulo la gran mayoría de lo que utilizamos en las aplicaciones java están dentro de ese modulo los modulos se incluyen los paquetes se important y como incluyo un modulo en un archivo module.inf por ejemplo si voy a incluir el modulo java.base (java.smartcardio) para leer tarjetas
+________________________________________________________________________________________________________________
+entrada y salida de datos
+utilizaremos la clase escanner
+es una clase que nos va permitir introducir datos de difernetes formas
+una de ellas es utilizando la consola del sistema
+clase escanner perteneciente al paquete java.util
+la ventaja de la herencia es el de la reutilización de código poder utilizar código construido anterior mente
+la clase escanner hereda de la clase object de java que se le denomina super clase cósmica de java es la clase para de las 
+que heredan el resto de las clase de java tanto de la que hay en la api como las clases que creo yo
+si una clase es final esta impide que otras clases puedan heredar de esta
+en java no existe la herencia multiple en java solo se puede heredar de una clase
+porque simplifica mucho el código y esto esta relacionado con la palabra reservada implement 
+esta palabra reservada permite que una clase de java adopte comportamientos definidos en la interfaces comportamientos
+que tenemos que seguir (tipos de reglas) en este caso nuestra clase escaner que implementa dos interfaces por que las implementa
+la palabra reservada implement viene a suplir esa característica de herencia multiple
+
+métodos de la clase scanner
+ningún método de la clase esscanner es estatico por ende toca  instanciar un objeto de este para poder utilizar sus métodos
+
+java es un lenguaje completa mente orientado a objetos hasta los errores que se cometen en un programa en ejecución se considera objetos
+un constructor cuya característica principal es que tiene el mismo nombre que la clase sirve para inicializar una clase
+los contructores tienen sobrecarga de constructores y el objetivo de eso es darle varios estados iniciales a la hora de crear un objeto le puedo dar diferentes estados iniciales
+
+la clase esscanner sirve para leer datos de entradas desde diferentes fuentes por ejemplo des de la consola 
+también me permite leer datos desde archivos el que nos permite leer información desde consola es el de (InputStream source) construye 
+un nuevo esccaner que produce valores escaneados desde una entrada de datos input stream 
+
+
+
+

@@ -1,0 +1,72 @@
+curso spring
+#ventajas de spring
+1inyeccion de dependencias  favorece el  loose coupling 
+y es cuando es cuando tengo que modificar un programa java y esa modificación la debo repetir en un montón
+de clases para que todo funcione modifico algo en una pequeña clase y me encuentro que debo introducir esa modificación
+en otra clase en otra y otra el loose copling es cuando esa pequeña modificación la tengo que hacer solo en una clase para que todo funcione
+la inyección de dependencias permite la se paracion de los modulos de un programa java para que todas aquellas modificaciones 
+solo las deba hacer en un lugar en concreto y no rrepetir esa modificación
+
+permite el desarrollo sencillo con POJOS(PLAIN OLD JAVA OBJECT) es una clase sencilla no hereda de otra no implementa una interfaces
+
+minimiza el código repetido
+
+esctrutura del core 
+se puede dividir en sinco grandes modulos
+infraestructura:maneja todo lo referente a las trasacciones , logeos, a la seguridad de nuestras aplicaciones
+
+
+Acceso a datos: trae a su ves los submodulos de 
+jDBC:nos va permitir acceder a datos con mucho menos código este modulo con una serie de helper clases nos  va permitir acceder con jdbc a datos pero utilizando
+muchísimo menos codigo
+
+
+transactiones:trae dos pequeños submodulos nos va permitir reducir muchísimo nuestro código de programación a la hora de realizar llamadas a las bases de datos
+ OXM
+
+ JMS
+
+
+ORM:Object realctional mapping nos va permitir acceder a datos con un enfoque orientado a objetos
+nos permite utilizar la programación orientada a objetos con bases de datos que tal forma que podemos tratar las bases de datos como objetos con sus propiedades 
+y métodos para modificar ,acceder y leer la información que hay almacenada en la base de datos
+
+Contenedor central: es el principal el  contenedor central a su ves se subdivide en cuatro modulos
+beans:
+
+SpEl:es un potente lenguaje de expresiones que nos permiten entre otras cosas  manipular objetos en tiempo de ejecucion
+
+Core
+
+Context
+
+
+el contenedor central hace todo lo relacionado a la creación de beans a la lectura de archivos config también a todo lo que hace referencia al manejo de propiedades y dependencias también el uso de los context como almacen de beans en memoria
+_____
+web/MVC:viene con cuatro modulos  Servelet
+
+portlet
+
+websocket
+
+web
+
+estos modulos nos van a permitir el acceso web remoto , la programación distribuida, nos va permitir la integrecion de otras tecnologías como jsf o struts
+
+pruebas:
+
+el core spring esta compuesto por muchísimos modulos
+y todos ellos se engloban en esas cinco grnades parte
+
+
+instalacion tomcat y entorno de desarrollo
+
+--sprin.io viene información importatantisima obre este framework
+
+instalación servidor tomcat
+#impresamos a la pagina de tomcat le damos en download
+#instalamos el services instaler
+#cuando descarguemos tomcat elegimos todos los ítems  luego desplegamos tomcat y seleccionamos service startup
+configuramos tomcat en eclipse en eclipse tenemos varias pestañas entre las cuales tenmos una que es server si damos click 
+nosdira que no hayservidores disponibles y que damos click en un link para crear un nuevo servidor nos abre una ventana emergente ingresamos
+a apache escojemos tomcat 9.0 buscamos la carpeta de intalacion de tomcat
